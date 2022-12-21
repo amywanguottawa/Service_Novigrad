@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".FormEditor">
+
+    <TextView
+        android:text="Select Fields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_gravity="center_horizontal"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbFirstName"
+        android:text="First Name"
+        android:onClick="selectItem"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbLastName"
+        android:text="Last Name"
+        android:onClick="selectItem"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbAddress"
+        android:text="Address"
+        android:onClick="selectItem"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbBirthday"
+        android:text="Birthday"
+        android:onClick="selectItem"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbResidency"
+        android:text="Proof of residency"
+        android:onClick="selectItem"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbStatus"
+        android:text="Proof of status"
+        android:onClick="selectItem"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbFacePic"
+        android:text="Photo of yourself"
+        android:onClick="selectItem"/>
+
+
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/bAddFormItem"
+        android:text="Select choices"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="finalSelection"/>
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/bViewForm"
+        android:text="View Form"
+        android:layout_margin="5dp"
+        android:background="#0288D1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Selected fields: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFinalResult" />
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RateBranch">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the ratings page!"
+            android:textSize="30dp"/>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tellUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The branch you are rating is: "
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/etBranchName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:text="" />
+
+        <RatingBar
+            android:id="@+id/branchRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="3"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/bSubmitRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Rating"
+            android:onClick="onClick"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/commentHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Any comments for the branch can be given below."
+            android:textSize="30dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/bSubmitComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Comment"
+            android:onClick="onClick"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

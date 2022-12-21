@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.service_novigrad">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".customerViewServices"></activity>
+        <activity android:name=".BranchSearch" />
+        <activity android:name=".RateBranch" />
+        <activity android:name=".CustomerHub" />
+        <activity android:name=".customerSearch" />
+        <activity android:name=".HealthCardRequests" />
+        <activity android:name=".PhotoIdRequests" />
+        <activity android:name=".DriversLicenseRequests" />
+        <activity android:name=".ViewEmployeeServices" />
+        <activity android:name=".ServiceRequest" />
+        <activity android:name=".ViewWorkingHours" />
+        <activity android:name=".StoreHours" />
+        <activity android:name=".ViewProfileInfo" />
+        <activity android:name=".employeeHub" />
+        <activity android:name=".employeeProfileInfo" />
+        <activity
+            android:name=".photo_Id"
+            android:label="photo_Id" />
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name=".AdminScreen"
+            android:label="admin_screen" />
+        <activity
+            android:name=".WelcomeScreen"
+            android:label="@string/title_activity_welcome_screen" />
+        <activity
+            android:name=".AccountSelector"
+            android:label="account_selector" />
+        <activity
+            android:name=".AccountEditor"
+            android:label="account_editor" />
+        <activity
+            android:name=".drivers_license"
+            android:label="drivers_license" />
+        <activity
+            android:name=".HealthCard"
+            android:label="HealthCard" />
+        <activity
+            android:name=".FormEditor"
+            android:label="HealthCard" />
+        <!--
+    <activity
+            android:name=".ServiceEditor"
+            android:label="service_editor">
+        </activity>
+
+
+        <activity
+            android:name=".ServiceAdapterClass"
+            android:label="item_list"
+            tools:ignore="Instantiatable">
+        </activity>
+        -->
+        <activity android:name=".ViewService" />
+        <activity android:name=".ServiceEditor" />
+    </application>
+
+</manifest>

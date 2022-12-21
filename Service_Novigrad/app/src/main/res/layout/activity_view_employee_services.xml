@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewEmployeeServices">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tS1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bDeleteS1"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:onClick="onClick"
+                android:text="Delete Service" />
+
+            <Button
+                android:id="@+id/bViewRequestS1"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="View requests"
+                android:onClick="onClick"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tS2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bDeleteS2"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Delete Service" />
+
+            <Button
+                android:id="@+id/bViewRequestS2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View requests"
+                android:onClick="onClick"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tS3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bDeleteS3"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Delete Service" />
+
+            <Button
+                android:id="@+id/bViewRequestS3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="View requests"
+                android:onClick="onClick"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tS4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bDeleteS4"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Delete Service" />
+
+            <Button
+                android:id="@+id/bViewRequestS4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View requests"
+                android:onClick="onClick"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tS5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bDeleteS5"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Delete Service" />
+
+            <Button
+                android:id="@+id/bViewRequestS5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View requests"
+                android:onClick="onClick"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tS6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bDeleteS6"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Delete Service"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/bViewRequestS6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View requests"
+                android:onClick="onClick"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
